@@ -36,17 +36,12 @@ covered in the course.
 - NumPy - linear algebra (SVD-based DLT solver)
 - Matplotlib - optional plotting/visualization
 - pytest - unit testing
-- reportlab (Python) and docx.js (Node) - used only to generate the project report
-  (PDF and DOCX), not part of the stitching pipeline itself
 
 ## Project Structure
 
 ```
 panorama-stitching/
 ├── main.py                     # CLI entry point
-├── generate_report.py          # Builds the PDF report (reportlab)
-├── generate_report_docx.js     # Builds the DOCX report (docx.js)
-├── package.json / package-lock.json   # Node deps for the DOCX report script
 ├── requirements.txt
 ├── statement.md                 # Problem statement, scope, target users
 ├── README.md
@@ -66,7 +61,7 @@ panorama-stitching/
 │   ├── sample/                   # Input images (synthetic + real boat set)
 │   └── output/                   # Stitched panoramas are saved here
 └── docs/
-    ├── Project_Report.pdf / .docx   # Full project report
+    ├── Project_Report.pdf           # Full project report
     ├── diagrams/                    # Architecture, workflow, UML diagrams
     ├── input_photos/                # Real input photos used in the report
     ├── independent_test/            # Second-machine reproduction screenshots
